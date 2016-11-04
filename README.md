@@ -1,6 +1,6 @@
-# HTTP Server Boilerplate
+# HTTP API Server Boilerplate
 
-HTTP Server Boilerplate is a professional back-end template for building fast, robust, and adaptable HTTP APIs.
+HTTP API Server Boilerplate is a professional back-end template for building fast, robust, and adaptable HTTP APIs.
 
 ## Quick start
 
