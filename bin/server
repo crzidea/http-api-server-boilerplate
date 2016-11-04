@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+/**
+ * Module dependencies.
+ */
+var program = require('commander');
+var api = require('..');
+
+// options
+
+program
+  .option('-H, --host <host>', 'specify the host [0.0.0.0]', '0.0.0.0')
+  .option('-p, --port <port>', 'specify the port [4000]', '4000')
+  .option('-b, --backlog <size>', 'specify the backlog size [511]', '511')
+  .parse(process.argv);
+
+// create app
+
+var app = api().app;
+
+// listen
+
+app.listen(program.port, program.host, ~~program.backlog);
+console.log(`Now using node v${process.versions.node}`)
+console.log('Listening on %s:%s', program.host, program.port);
+process.on("uncaughtException", function(err) {
+  console.error(err);
+})

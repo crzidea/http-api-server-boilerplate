@@ -1,0 +1,9 @@
+npm-debug.log
+node_modules/
+.nyc_output/
+.DS_Store
+*.swp
+*.swo
+.previous-package.json
+config/*.json
+.idea/
