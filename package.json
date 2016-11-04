@@ -1,5 +1,5 @@
 {
-  "name": "http-server-boilerplate",
+  "name": "http-api-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
