@@ -1,4 +1,4 @@
-const test = require('require-root')('routes')('lib/load/test');
+const test = require('require-root')('.routes')('lib/load/test');
 
 test(__dirname, (context) => {
   const assert = context.assert
